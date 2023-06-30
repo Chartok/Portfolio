@@ -1,4 +1,8 @@
-<section class="contact" id="contact">
+import React from 'react';
+
+export default function Contact() {
+    return (
+        <section class="contact" id="contact">
             <h2 class="heading text-center">Contact <span>Me!</span></h2>
             <form action="#">
                 <div class="form-group">
@@ -13,3 +17,5 @@
                 <button type="submit" class="btn btn-primary">Send Message</button>
             </form>
         </section>
+    );
+}

@@ -1,7 +1,8 @@
 import React from 'react';
 
-const About = () => (
-    <section class="about" id="about">
+export default function About() {
+    return (
+        <section class="about" id="about">
             <div class="about-img">
                 <img src="images/selfie.png" alt="mohammed bhimjee" />
             </div>
@@ -13,6 +14,5 @@ const About = () => (
                 </p>
             </div>
         </section>
-);
-
-export default About;
+    );
+}
