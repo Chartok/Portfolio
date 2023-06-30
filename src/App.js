@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import Header from './components/Header';
 import Navigation from './components/Navigation';
-import Project from './components/Project';
+import Project from './components/Projects';
 import Footer from './components/Footer';
+import Home from './components/Home';
+import Contact from './components/Contact';
 
 export default function App() {
-  const [activeSection, setActiveSection] = useState('home');
+  const [activeSection, setActiveSection] = useState('about');
 
   const handleSectionChange = (section) => {
     setActiveSection(section);
@@ -19,37 +21,34 @@ export default function App() {
       <main>
         {activeSection === 'home' && (
           <section>
+            <Home />
             <h2>Home</h2>
-            {/* Home content */}
+
           </section>
         )}
 
         {activeSection === 'portfolio' && (
           <section>
+            <Project />
             <h2>Portfolio</h2>
-            <div className="portfolio">
-              <Project title="Project 1" image="project1.jpg" description="Description 1" link="project1-link" />
-              <Project title="Project 2" image="project2.jpg" description="Description 2" link="project2-link" />
-              {/* Add more projects */}
-            </div>
+
           </section>
         )}
 
         {activeSection === 'contact' && (
           <section>
+            <Contact />
             <h2>Contact</h2>
-            {/* Contact form */}
           </section>
         )}
 
         {activeSection === 'resume' && (
           <section>
+            <Resume />
             <h2>Resume</h2>
-            {/* Resume content */}
           </section>
         )}
       </main>
-
       <Footer />
     </div>
   );
