@@ -1,40 +1,56 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './components/Header';
 import Navigation from './components/Navigation';
-import Project from './components/Projects';
+import Project from './components/Project';
 import Footer from './components/Footer';
 
-const App = () => {
+export default function App() {
+  const [activeSection, setActiveSection] = useState('home');
+
+  const handleSectionChange = (section) => {
+    setActiveSection(section);
+  };
+
   return (
     <div className="App">
-      <Header />
-      <Navigation />
-      <div class="home-content">
-        <h3>Hello, my name is</h3>
-        <h1>Mohammed Bhimjee</h1>
-        <h3>And I'm a <span>Tech/Dev Support</span></h3>
-        <p>My unique perspective allows me to unlock your full potential.</p>
-        <div class="social">
-          <a href="#https://www.linkedin.com/in/mohammed-bhimjee/"><i class="bx bxl-linkedin"></i></a>
-          <a href="#https://www.github.com/Chartok"><i class="bx bxl-github"></i></a>
-        </div>
-        <a href="https://docs.google.com/document/d/1EpnJK-pETelC5HLPk_zqbBhiI6fM-cwcj4eyjQ2TnUg/edit?usp=sharing"
-          class="btn">CV</a>
-      </div>
+      <Header activeSection={activeSection} onSectionChange={handleSectionChange} />
+      <Navigation activeSection={activeSection} onSectionChange={handleSectionChange} />
+
       <main>
-        <section>
-          <h2>Portfolio</h2>
-          <div className="portfolio">
-            <Project title="Project 1" image="project1.jpg" description="Description 1" link="project1-link" />
-            <Project title="Project 2" image="project2.jpg" description="Description 2" link="project2-link" />
-            {/* Add more projects */}
-          </div>
-        </section>
+        {activeSection === 'home' && (
+          <section>
+            <h2>Home</h2>
+            {/* Home content */}
+          </section>
+        )}
+
+        {activeSection === 'portfolio' && (
+          <section>
+            <h2>Portfolio</h2>
+            <div className="portfolio">
+              <Project title="Project 1" image="project1.jpg" description="Description 1" link="project1-link" />
+              <Project title="Project 2" image="project2.jpg" description="Description 2" link="project2-link" />
+              {/* Add more projects */}
+            </div>
+          </section>
+        )}
+
+        {activeSection === 'contact' && (
+          <section>
+            <h2>Contact</h2>
+            {/* Contact form */}
+          </section>
+        )}
+
+        {activeSection === 'resume' && (
+          <section>
+            <h2>Resume</h2>
+            {/* Resume content */}
+          </section>
+        )}
       </main>
 
       <Footer />
     </div>
   );
-};
-
-export default App;
+}
