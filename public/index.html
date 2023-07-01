@@ -1,147 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Project Portfolio</title>
-</head>
-
-<body class="bg-dark text-white">
-
-    <!-- Navbar -->
-
-    <header>
-
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <a href="#" class="navbar-brand">Portfolio</a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-                <span id="menu-icon" class="bx bx-menu"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-
-    </header>
-
-
-    <main>
-
-        <!-- Home section -->
-
-        <section class="home" id="home">
-            <div class="home-content">
-                <h3>Hello, my name is</h3>
-                <h1>Mohammed Bhimjee</h1>
-                <h3>And I'm a <span>Tech/Dev Support</span></h3>
-                <p>My unique perspective allows me to unlock your full potential.</p>
-                <div class="social">
-                    <a href="#"><i class="bx bxl-linkedin"></i></a>
-                </div>
-                <a href="https://docs.google.com/document/d/1EpnJK-pETelC5HLPk_zqbBhiI6fM-cwcj4eyjQ2TnUg/edit?usp=sharing"
-                    class="btn">CV</a>
-            </div>
-            <div class="home-img">
-                <img src="images/selfie.png" alt="photo of mohammed bhimjee">
-            </div>
-        </section>
-
-        <!-- About me -->
-
-        <section class="about" id="about">
-            <div class="about-img">
-                <img src="images/selfie.png" alt="photo of mohammed bhimjee">
-            </div>
-
-            <div class="about-content">
-                <h2 class="heading">About<span>Me</span></h2>
-                <h3>Tech/Dev Support</h3>
-                <p>With a foundation of a variety of experiences, the possibilities of what we can achieve is endless...
-                </p>
-            </div>
-        </section>
-
-        <!-- Portfolio -->
-
-        <section class="container-fluid bg-secondary" id="portfolio">
-            <h2 class="heading text-center">Latest <span>Projects</span></h2>
-
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="card">
-                        <img src="images/prjct2.png" class="card-img-top" alt="image of project 1">
-                        <div class="card-body">
-                            <h4 class="card-title">GamerLi</h4>
-                            <p class="card-text">A simple library dashboard to manage games. This was a collaboration project I worked with a group to produce an MVP. In this project our group combined what we learned (Node.js/Express, MySQL, Sessions, Handlebars, Bootstrap, and JavaScript)
-                            </p>
-                            <a href="https://gamerli.herokuapp.com/" class="btn btn-primary"><i
-                                    class="bx bx-link-external"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="card">
-                        <img src="images/city_skyilne.jpg" class="card-img-top" alt="image of project 2">
-                        <div class="card-body">
-                            <h4 class="card-title">
-                            <p class="card-text">One of my earliest projects prior to joining a coding bootcamp. Hightlighting what I learned as a beginner about HTML and CSS.</p>
-                            <a href="https://chartok.github.io/code-survey/" class="btn btn-primary"><i
-                                    class="bx bx-link-external"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="card">
-                        <img src="images/jott-preview.jpg" class="card-img-top" alt="image of project 3">
-                        <div class="card-body">
-                            <h4 class="card-title">JottItNow</h4>
-                            <p class="card-text">A note taking app deployed on heroku. This is the backend assignment for bootcamp I am proud of completing. Here my task was to simply write up the backend that enables the the application to appropriately write, save, update, and delete notes for users. However, to achieve this I had to refactor most of the code base. Strictly to maintain readibility, efficiency, and maintainability.</p>
-                            <a href="https://jottitnow.herokuapp.com/" class="btn btn-primary"><i
-                                    class="bx bx-link-external"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact me -->
-
-        <section class="contact" id="contact">
-            <h2 class="heading text-center">Contact <span>Me!</span></h2>
-            <form action="#">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="First and Last Name">
-                </div>
-                <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Email Address">
-                </div>
-                <div class="form-group">
-                    <textarea class="form-control" rows="3" placeholder="Your Message"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
-        </section>
-
-    </main>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
-</body>
-
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
 </html>
