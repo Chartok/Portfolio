@@ -1,17 +1,24 @@
 import React from "react";
-import Header from "./components/Header";
 
 export default function Home() {
     return (
         <>
-            <Header />
-            <section class="home" id="home">
-                <div class="home-content">
-                    <h1>Hi, I am <span>Mohammed Bhimjee</span></h1>
-                    <h3>Tech/Dev Support</h3>
-                    <p>With a foundation of a variety of experiences, the possibilities of what we can achieve is endless...
-                    </p>
-                    <a href="#contact" class="btn">Contact Me</a>
+            <section className="home" id="home">
+                <div className="home-content">
+                    <h3>Hello, my name is</h3>
+                    <h1>Mohammed Bhimjee</h1>
+                    <h3>And I'm a <span>Web Developer</span></h3>
+                    <p>My unique perspective allows me to unlock your full potential.</p>
+                    <div className="social">
+                        <a href="#https://www.linkedin.com/in/mohammed-bhimjee/"><i className="bx bxl-linkedin"></i></a>
+                        <a href="#https://www.github.com/Chartok"><i className="bx bxl-github"></i></a>
+                        <a href="#https://dev.to/yaysa"><i className="bx bxl-dev-to"></i></a>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1B2nQJK7jAgKuQgXGjuWjpkor_nMXWiRR/view?usp=drive_link"
+                        className="btn">CV</a>
+                </div>
+                <div className="home-img">
+                    <img src="images/selfie.png" alt="mohammed bhimjee" />
                 </div>
             </section>
         </>

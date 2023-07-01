@@ -36,6 +36,24 @@ export default function Projects() {
             title: "JottItNow",
             description: "A note taking app deployed on Heroku. This is the backend assignment for bootcamp I am proud of completing. Here my task was to simply write up the backend that enables the application to appropriately write, save, update, and delete notes for users. However, to achieve this I had to refactor most of the code base, strictly to maintain readability, efficiency, and maintainability.",
             link: "https://jottitnow.herokuapp.com/"
+        },
+        {
+            imgSrc: "images/soc-net-preview.jpg",
+            title: "Social Network API",
+            description: "An API for a social network application utilizing a NoSQL database (MongooDB) to handle large amounts of unstructured data",
+            link: "https://github.com/Chartok/anxious-starfish"
+        },
+        {
+            imgSrc: "images/planet-sched.png",
+            title: "Plan-et",
+            description: "a simple calendar application that allows a user to save events for each hour of a typical working day (9am–5pm). This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.",
+            link: "https://chartok.github.io/plan-et/"
+        },
+        {
+            imgSrc: "images/weather-dashboard.jpg",
+            title: "Weatherly",
+            description: "A weather dashboard that will run in the browser and feature dynamically updated HTML and CSS. This app will use the OpenWeather API to retrieve weather data for cities. This app will also use localStorage to store any persistent data.",
+            link: "https://chartok.github.io/weatherly/"
         }
     ];
 

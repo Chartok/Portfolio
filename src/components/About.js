@@ -2,14 +2,14 @@ import React from 'react';
 
 export default function About() {
     return (
-        <section class="about" id="about">
-            <div class="about-img">
+        <section className="about" id="about">
+            <div className="about-img">
                 <img src="images/selfie.png" alt="mohammed bhimjee" />
             </div>
 
-            <div class="about-content">
-                <h2 class="heading">About<span>Me</span></h2>
-                <h3>Tech/Dev Support</h3>
+            <div className="about-content">
+                <h2 className="heading">About<span>Me</span></h2>
+                <h3>Web Developer</h3>
                 <p>With a foundation of a variety of experiences, the possibilities of what we can achieve is endless...
                 </p>
             </div>
