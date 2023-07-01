@@ -1,47 +1,51 @@
+# Portfolio Built With React
 
-  # Portfolio Built With React
+## Description
 
-  ## Description
+A simple portfolio created with React
 
-  A simple portfolio created with React
+## Table of Contents
 
-  ## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [License](#license)
+- [Questions](#questions)
+- [Credits](#credits)
+- [Preview](#preview)
 
-  * [Installation](#installation)
-  * [Usage](#usage)
-  * [Contributing](#contributing)
-  * [Tests](#tests)
-  * [License](#license)
-  * [Questions](#questions)
+## Installation
 
-  ## Installation
+N/A
 
-  N/A
+## Usage
 
-  ## Usage
+View my portfolio [here](https://chartok.github.io/portfolio/).
 
-  View my portfolio here.
+## Contributing
 
-  ## Contributing
+Contact me on GitHub
 
-  Contact me on GitHub
+## Tests
 
-  ## Tests
+Clone repository>open directory in terminal>install dependencies>run 'npm test'
 
-  Clone repository>open directory in terminal>install dependencies>run 'npm test'
+## License
 
-  ## License
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+MIT License
+<https://opensource.org/licenses/MIT>
 
-  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-  MIT License
-  https://opensource.org/licenses/MIT
+## Questions
 
-  ## Questions
+If you have any questions, please contact me at <m.bhimjee@outlook.com>.
+You can also find me on GitHub at Chartok.
 
-  If you have any questions, please contact me at m.bhimjee@outlook.com.
-  You can also find me on GitHub at Chartok.
+## Credits
 
-  ## Credits
+Mohammed "Asad" Bhimjee
 
-  Mohammed "Asad" Bhimjee
-  
+## Preview
+
+![Preview](./images/ReactPort.png)
