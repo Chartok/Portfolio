@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './App.css';
 import Header from './components/Header';
 import Navigation from './components/Navigation';
 import Project from './components/Projects';
@@ -22,30 +23,26 @@ export default function App() {
         {activeSection === 'home' && (
           <section>
             <Home />
-            <h2>Home</h2>
-
           </section>
         )}
 
         {activeSection === 'portfolio' && (
           <section>
             <Project />
-            <h2>Portfolio</h2>
-
           </section>
         )}
 
         {activeSection === 'contact' && (
           <section>
             <Contact />
-            <h2>Contact</h2>
           </section>
         )}
 
         {activeSection === 'resume' && (
+          // <Resume />
           <section>
-            <Resume />
-            <h2>Resume</h2>
+            <h2>Resume (Under construction)</h2>
+            {/* Resume content */}
           </section>
         )}
       </main>
