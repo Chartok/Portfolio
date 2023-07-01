@@ -1,8 +1,19 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('navigates to different sections', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+
+  // Get elements by text.
+  const homeLink = screen.getByText(/home/i);
+  const aboutLink = screen.getByText(/about/i);
+
+  // Click on about link.
+  fireEvent.click(aboutLink);
+
+  // Check if home link does not have 'active' class after about link has been clicked.
+  expect(homeLink.className).not.toContain('active');
+
+  // Check if about link has 'active' class after it has been clicked.
+  expect(aboutLink.className).toContain('active');
 });
