@@ -10,9 +10,9 @@ export default function Home() {
                     <h3>And I'm a <span>Web Developer</span></h3>
                     <p>My unique perspective allows me to unlock your full potential.</p>
                     <div className="social">
-                        <a href="#https://www.linkedin.com/in/mohammed-bhimjee/"><i className="bx bxl-linkedin"></i></a>
-                        <a href="#https://www.github.com/Chartok"><i className="bx bxl-github"></i></a>
-                        <a href="#https://dev.to/yaysa"><i className="bx bxl-dev-to"></i></a>
+                        <a href="https://www.linkedin.com/in/mohammed-bhimjee/"><i className="bx bxl-linkedin"></i></a>
+                        <a href="https://www.github.com/Chartok"><i className="bx bxl-github"></i></a>
+                        <a href="https://dev.to/yaysa"><i className="bx bxl-dev-to"></i></a>
                     </div>
                     <a href="https://drive.google.com/file/d/1B2nQJK7jAgKuQgXGjuWjpkor_nMXWiRR/view?usp=drive_link"
                         className="btn">CV</a>
